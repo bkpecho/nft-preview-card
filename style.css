@@ -37,5 +37,78 @@ body {
   font-size: var(--fs-paragraph);
   font-family: var(--ff-outfit);
   font-weight: var(--fw-regular);
+
+  /* for this project only */
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
 }
 
+article {
+  border-radius: 1rem;
+  background: var(--clr-neutral-card);
+
+  min-width: 375px;
+  max-width: 375px;
+  width: 375px;
+
+  padding: 2rem;
+}
+section {
+  display: flex;
+  flex-flow: column nowrap;
+
+  gap: 1rem;
+}
+
+section img {
+  border-radius: 1rem;
+}
+
+section p {
+  color: var(--clr-primary-400);
+}
+
+.price {
+  display: flex;
+  flex-flow: column no wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eth,
+.day {
+  color: var(--clr-primary-100);
+}
+
+.eth::before {
+  content: '';
+  background-image: url('images/icon-ethereum.svg');
+
+  object-fit: fill;
+
+  height: 1rem;
+  width: 1rem;
+
+  margin-right: 0.5rem;
+
+  display: inline-block;
+}
+
+.day {
+  color: var(--clr-primary-400);
+}
+
+.day::before {
+  content: '';
+  background-image: url('images/icon-clock.svg');
+
+  height: 1rem;
+  width: 1rem;
+
+  margin-right: 0.5rem;
+
+  display: inline-block;
+}
