@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* colors */
+  --clr-primary-400: hsl(215, 51%, 70%);
+  --clr-primary-100: hsl(178, 100%, 50%);
+
+  /* neutral */
+  --clr-neutral-main: hsl(217, 54%, 11%);
+  --clr-neutral-card: hsl(216, 50%, 16%);
+  --clr-neutral-line: hsl(215, 32%, 27%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+
+  /* typography */
+  --fs-paragraph: 18px;
+
+  --ff-outfit: 'Outfit', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* --------------------------- */
+
+body {
+  background: var(--clr-neutral-main);
+  color: var(--clr-neutral-100);
+
+  font-size: var(--fs-paragraph);
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+}
+
